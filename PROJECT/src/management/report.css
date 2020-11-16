@@ -1,0 +1,4 @@
+.sales:hover{
+    -fx-border-color: #F78C7B;
+    -fx-border-width: 0px 0px 3px 0px;
+}

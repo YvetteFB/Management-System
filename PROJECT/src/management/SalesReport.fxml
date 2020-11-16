@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="600.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="management.SReportController">
+   <children>
+      <TableView fx:id="salesReportTable" layoutX="7.0" layoutY="29.0" prefHeight="349.0" prefWidth="323.0">
+        <columns>
+          <TableColumn fx:id="prod_nameRColumn" prefWidth="137.0" text="Product Name" />
+            <TableColumn fx:id="priceRColumn" prefWidth="126.0" text="Price" />
+            <TableColumn fx:id="qRColumn" prefWidth="58.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="showsalesRBtn" layoutX="414.0" layoutY="117.0" onAction="#searchSales" style="-fx-background-color: #F78C7B;" text="Show all Sales" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="sortQBtn" layoutX="428.0" layoutY="188.0" onAction="#sortQSales" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #F78C7B;" text="Sort" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="348.0" layoutY="171.0" prefHeight="3.0" prefWidth="244.0" />
+      <JFXButton fx:id="totalSalesBtn" layoutX="468.0" layoutY="428.0" onAction="#totalSales" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #F78C7B;" text="Total" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <TextArea fx:id="salesRepDisplay" layoutX="37.0" layoutY="391.0" prefHeight="105.0" prefWidth="378.0" />
+      <Label layoutX="387.0" layoutY="47.0" prefHeight="17.0" prefWidth="36.0" text="FROM">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="521.0" layoutY="47.0" prefHeight="19.0" prefWidth="22.0" text="TO">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fromDate" layoutX="340.0" layoutY="81.0" prefHeight="25.0" prefWidth="122.0" promptText="YYYY-MM-DD" />
+      <TextField fx:id="toDate" layoutX="471.0" layoutY="81.0" prefHeight="25.0" prefWidth="122.0" promptText="YYYY-MM-DD" />
+      <Label layoutX="392.0" layoutY="19.0" text="Show all sales between">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="management.PReportController">
+   <children>
+      <TableView fx:id="purchRTable" layoutX="118.0" layoutY="45.0" prefHeight="363.0" prefWidth="341.0">
+        <columns>
+          <TableColumn fx:id="itemnameRColumn" prefWidth="145.0" text="Item Name" />
+          <TableColumn fx:id="qRColumn" prefWidth="89.0" text="Quantity" />
+            <TableColumn fx:id="priceRColumn" prefWidth="105.0" text="Price" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="showPurchRBtn" layoutX="419.0" layoutY="431.0" style="-fx-background-color: #F78C7B;" text="Calculate" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
